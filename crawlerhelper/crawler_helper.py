@@ -57,7 +57,7 @@ class CrawlerHelper():
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
             ' (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'}
         try:
-            ret = requests.get(url, cookies, headers, timeout=5)
+            ret = requests.get(url, cookies=cookies, headers=headers, timeout=5)
         except requests.exceptions.HTTPError as errh:
             self.logger.error("Http Error:", errh,
                               "with status code:", ret.status_code)
