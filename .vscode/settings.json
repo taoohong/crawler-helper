@@ -1,0 +1,6 @@
+{
+    "python.analysis.extraPaths": [ 
+        "./crawler_helper"
+    ],
+    "python.analysis.typeCheckingMode": "basic"
+}
